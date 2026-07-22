@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitaliza Lab - Capital Abeja 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00F0FF;
+            --secondary: #7000FF;
+            --bg-dark: #0A0A10;
+            --text-light: #E0E0E0;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(180deg, rgba(112,0,255,0.2) 0%, rgba(10,10,16,1) 100%);
+            border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--primary);
+            margin: 40px 0 20px 0;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #A0A0A0;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .price {
+            font-size: 2.5em;
+            font-weight: 800;
+            color: var(--primary);
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "➔";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .budget-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .budget-table th, .budget-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .budget-table th {
+            color: var(--primary);
+        }
+
+        .quote {
+            background: rgba(112, 0, 255, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 30px;
+            font-style: italic;
+            font-size: 1.2em;
+            margin-top: 60px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Digitaliza Lab</h1>
+        <p class="subtitle">Manual de Presentación | Capital Abeja Emprende 2026</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>1. ¿Qué es Digitaliza Lab?</h2>
+            <div class="card">
+                <p><strong>Rubro:</strong> Servicios informáticos.</p><br>
+                <p>Desarrollamos <strong>landing pages profesionales orientadas a la conversión</strong>. Ayudamos a profesionales, emprendedores y microempresas a conseguir más clientes mediante una presencia digital rápida y efectiva.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. El Problema vs La Solución</h2>
+            <div class="grid-2">
+                <div class="card" style="border-top: 3px solid #FF0055;">
+                    <h3>❌ El Problema</h3>
+                    <p>Las microempresas no tienen web porque:</p>
+                    <ul style="margin-top: 15px;">
+                        <li>Las agencias son costosas.</li>
+                        <li>Los tiempos son largos.</li>
+                        <li>Hacerlo solo es muy técnico.</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-top: 3px solid var(--primary);">
+                    <h3>✅ La Solución</h3>
+                    <p>Nuestra Propuesta de Valor:</p>
+                    <div class="price">$99.990</div>
+                    <ul>
+                        <li>Landing page en <span class="highlight">72 horas</span>.</li>
+                        <li><strong>Todo Incluido:</strong> Dominio, Hosting, SSL y Correo.</li>
+                        <li>Sin costos ocultos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Clientes y Diferenciadores</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>👥 Clientes</h3>
+                    <ul>
+                        <li>Profesionales</li>
+                        <li>Microempresas</li>
+                        <li>Emprendedores</li>
+                    </ul>
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #aaa;">Todos necesitan presencia digital y captar clientes.</p>
+                </div>
+                <div class="card">
+                    <h3>⚡ Diferenciadores</h3>
+                    <ul>
+                        <li>Rapidez (72 hrs)</li>
+                        <li>Servicio Todo Incluido</li>
+                        <li>Enfoque en Conversión</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🌱 Sustentabilidad</h3>
+                    <ul>
+                        <li>100% digital (cero papel)</li>
+                        <li>Sin traslados</li>
+                        <li>Próximamente: Green Hosting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. Presupuesto del Proyecto</h2>
+            <div class="card">
+                <h3 style="text-align: center; margin-bottom: 20px;">Total Solicitado: <span class="highlight">$3.500.000</span></h3>
+                <table class="budget-table">
+                    <tr>
+                        <th>Ítem</th>
+                        <th>Monto</th>
+                        <th>Justificación Clave</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Gestión Empresarial</strong></td>
+                        <td>$500.000</td>
+                        <td>Constitución legal y captación vía Meta/Google Ads.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Activos Fijos</strong></td>
+                        <td>$1.760.000</td>
+                        <td>Notebook principal, Monitor 27" y periféricos ergonómicos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Activos Intangibles</strong></td>
+                        <td>$740.000</td>
+                        <td>Suscripciones IA (ChatGPT+, Cursor Pro), Workspace, Canva y marca INAPI.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Capital de Trabajo</strong></td>
+                        <td>$500.000</td>
+                        <td>Insumos directos: Dominios, Hosting y Envato Elements.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div class="quote">
+                "El subsidio no está destinado a crear la idea de negocio desde cero, sino a fortalecer una empresa que ya validó su servicio. La inversión permitirá formalizar Digitaliza Lab, mejorar su capacidad operativa, aumentar la productividad y captar más clientes para consolidar un negocio sostenible en el tiempo."
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        Digitaliza Lab &copy; 2026 - Resumen Ejecutivo
+    </footer>
+
+</body>
+</html>
