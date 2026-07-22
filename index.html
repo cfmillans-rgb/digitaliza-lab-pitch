@@ -28,7 +28,7 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -52,14 +52,21 @@
         h2 {
             font-size: 2em;
             color: var(--primary);
-            margin: 40px 0 20px 0;
+            margin: 60px 0 20px 0;
             border-left: 4px solid var(--primary);
             padding-left: 15px;
         }
 
         h3 {
             color: #fff;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        h4 {
+            color: var(--primary);
+            margin: 15px 0 5px 0;
+            font-size: 1.1em;
         }
 
         .subtitle {
@@ -75,7 +82,7 @@
 
         .grid-3 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
 
@@ -83,13 +90,13 @@
             background: var(--card-bg);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
-            padding: 25px;
+            padding: 30px;
             transition: transform 0.3s, border-color 0.3s;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
+            transform: translateY(-3px);
+            border-color: rgba(0, 240, 255, 0.5);
         }
 
         .price {
@@ -126,17 +133,34 @@
         .budget-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .budget-table th, .budget-table td {
-            padding: 15px;
+            padding: 12px 15px;
             text-align: left;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .budget-table th {
             color: var(--primary);
+            background: rgba(255, 255, 255, 0.05);
+            font-weight: 600;
+        }
+        
+        .budget-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .budget-table .total-row td {
+            font-weight: 800;
+            color: #fff;
+            background: rgba(112, 0, 255, 0.2);
+            border-top: 2px solid var(--secondary);
         }
 
         .quote {
@@ -144,9 +168,21 @@
             border-left: 4px solid var(--primary);
             padding: 30px;
             font-style: italic;
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin-top: 60px;
             border-radius: 0 10px 10px 0;
+            line-height: 1.5;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(0, 240, 255, 0.1);
+            color: var(--primary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 240, 255, 0.3);
         }
 
         footer {
@@ -162,7 +198,7 @@
 
     <header>
         <h1>Digitaliza Lab</h1>
-        <p class="subtitle">Manual de Presentación | Capital Abeja Emprende 2026</p>
+        <p class="subtitle">Manual de Presentación y Defensa | Capital Abeja Emprende 2026</p>
     </header>
 
     <div class="container">
@@ -183,7 +219,7 @@
                     <ul style="margin-top: 15px;">
                         <li>Las agencias son costosas.</li>
                         <li>Los tiempos son largos.</li>
-                        <li>Hacerlo solo es muy técnico.</li>
+                        <li>Hacerlo solo requiere habilidades muy técnicas.</li>
                     </ul>
                 </div>
                 <div class="card" style="border-top: 3px solid var(--primary);">
@@ -191,76 +227,172 @@
                     <p>Nuestra Propuesta de Valor:</p>
                     <div class="price">$99.990</div>
                     <ul>
-                        <li>Landing page en <span class="highlight">72 horas</span>.</li>
-                        <li><strong>Todo Incluido:</strong> Dominio, Hosting, SSL y Correo.</li>
-                        <li>Sin costos ocultos.</li>
+                        <li>Landing page lista en <span class="highlight">72 horas</span> hábiles.</li>
+                        <li><strong>Todo Incluido:</strong> Dominio, Hosting, Certificado SSL y Correo corporativo (1 año).</li>
+                        <li>Precio único sin costos ocultos.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>3. Clientes y Diferenciadores</h2>
+            <h2>3. Modelo de Negocio y Diferenciadores</h2>
             <div class="grid-3">
                 <div class="card">
                     <h3>👥 Clientes</h3>
                     <ul>
-                        <li>Profesionales</li>
-                        <li>Microempresas</li>
-                        <li>Emprendedores</li>
+                        <li><strong>Profesionales:</strong> Abogados, psicólogos, arquitectos. Necesitan mejorar su imagen.</li>
+                        <li><strong>Microempresas:</strong> Construcción, transportes. Necesitan captar clientes.</li>
+                        <li><strong>Emprendedores:</strong> Cosmética, gastronomía. Necesitan vender online.</li>
                     </ul>
-                    <p style="margin-top: 10px; font-size: 0.9em; color: #aaa;">Todos necesitan presencia digital y captar clientes.</p>
                 </div>
                 <div class="card">
                     <h3>⚡ Diferenciadores</h3>
                     <ul>
-                        <li>Rapidez (72 hrs)</li>
-                        <li>Servicio Todo Incluido</li>
-                        <li>Enfoque en Conversión</li>
+                        <li><strong>Rapidez:</strong> Entrega garantizada en 72 hrs.</li>
+                        <li><strong>Integral:</strong> Todo el servicio tecnológico cubierto (hosting, dominio, ssl).</li>
+                        <li><strong>Conversión:</strong> Sitios pensados para vender, no solo de adorno.</li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h3>🌱 Sustentabilidad</h3>
+                    <h3>📈 Modelo & Sustentabilidad</h3>
                     <ul>
-                        <li>100% digital (cero papel)</li>
-                        <li>Sin traslados</li>
-                        <li>Próximamente: Green Hosting</li>
+                        <li><strong>Ingreso principal:</strong> Landing a $99.990</li>
+                        <li><strong>Ingresos futuros:</strong> Mantenciones, renovaciones anuales de hosting/dominio.</li>
+                        <li><strong>Ecológico:</strong> 100% digital, cero papel, próximamente Green Hosting.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <section>
-            <h2>4. Presupuesto del Proyecto</h2>
-            <div class="card">
-                <h3 style="text-align: center; margin-bottom: 20px;">Total Solicitado: <span class="highlight">$3.500.000</span></h3>
+            <h2>4. Presupuesto Detallado ($3.500.000)</h2>
+            
+            <div class="card" style="margin-bottom: 20px;">
+                <span class="badge">Gestión Empresarial ($500.000)</span>
+                <p style="margin-bottom: 15px;">Inversión enfocada en la formalización del negocio y la inyección inicial de marketing para asegurar flujo constante de clientes.</p>
                 <table class="budget-table">
                     <tr>
                         <th>Ítem</th>
                         <th>Monto</th>
-                        <th>Justificación Clave</th>
                     </tr>
                     <tr>
-                        <td><strong>Gestión Empresarial</strong></td>
+                        <td>Constitución legal de la empresa</td>
+                        <td>$100.000</td>
+                    </tr>
+                    <tr>
+                        <td>Pauta publicitaria (Meta Ads + Google Ads)</td>
+                        <td>$400.000</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td>Total Gestión Empresarial</td>
                         <td>$500.000</td>
-                        <td>Constitución legal y captación vía Meta/Google Ads.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Activos Fijos</strong></td>
-                        <td>$1.760.000</td>
-                        <td>Notebook principal, Monitor 27" y periféricos ergonómicos.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Activos Intangibles</strong></td>
-                        <td>$740.000</td>
-                        <td>Suscripciones IA (ChatGPT+, Cursor Pro), Workspace, Canva y marca INAPI.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Capital de Trabajo</strong></td>
-                        <td>$500.000</td>
-                        <td>Insumos directos: Dominios, Hosting y Envato Elements.</td>
                     </tr>
                 </table>
+            </div>
+
+            <div class="card" style="margin-bottom: 20px;">
+                <span class="badge">Activos Fijos ($1.760.000)</span>
+                <p style="margin-bottom: 15px;">Equipamiento tecnológico de alto rendimiento para desarrollo de software y prevención de salud laboral. <strong>Nota estratégica:</strong> Se opta por líneas de <i>"Business/Pro"</i> (ej. HP 14-EP1000LA o Lenovo ThinkBook) para asegurar una imagen profesional ante Sercotec, evitando equipos de gama <i>"Gamer"</i> que pueden generar cuestionamientos innecesarios.</p>
+                <table class="budget-table">
+                    <tr>
+                        <th>Ítem (Ejemplo de Mercado)</th>
+                        <th>Specs Mínimas</th>
+                        <th>Monto</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Notebook Profesional</strong><br>(Ej: HP 14-EP1000LA o Lenovo ThinkBook 14 G3)</td>
+                        <td>Intel Core Ultra 5 / Ryzen 7<br>16GB RAM / 512GB SSD / FHD</td>
+                        <td>$1.300.000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monitor 27"</strong></td>
+                        <td>Full HD IPS</td>
+                        <td>$280.000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mouse Ergonómico Inalámbrico</strong><br>(Ej: Logitech MX Vertical)</td>
+                        <td>Perfil profesional / anti tendinitis</td>
+                        <td>$80.000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Teclado Ergonómico Inalámbrico</strong><br>(Ej: Kensington Pro Fit Ergo / Logitech ERGO)</td>
+                        <td>Diseño curvo para largas jornadas</td>
+                        <td>$100.000</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="2">Total Activos Fijos</td>
+                        <td>$1.760.000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <span class="badge">Activos Intangibles ($740.000)</span>
+                    <p style="margin-bottom: 10px; font-size: 0.9em;">Herramientas clave para acelerar la productividad del desarrollo y diseño, además de proteger la propiedad intelectual.</p>
+                    <table class="budget-table">
+                        <tr>
+                            <th>Ítem (12 meses)</th>
+                            <th>Monto</th>
+                        </tr>
+                        <tr>
+                            <td>ChatGPT Plus</td>
+                            <td>$285.000</td>
+                        </tr>
+                        <tr>
+                            <td>Cursor Pro (IA para Código)</td>
+                            <td>$170.000</td>
+                        </tr>
+                        <tr>
+                            <td>Canva Pro</td>
+                            <td>$130.000</td>
+                        </tr>
+                        <tr>
+                            <td>Google Workspace Business</td>
+                            <td>$100.000</td>
+                        </tr>
+                        <tr>
+                            <td>Registro marca INAPI (1 clase)</td>
+                            <td>$55.000</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td>Total Intangibles</td>
+                            <td>$740.000</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <span class="badge">Capital de Trabajo ($500.000)</span>
+                    <p style="margin-bottom: 10px; font-size: 0.9em;">Insumos y materias primas digitales necesarias para operar y construir los servicios vendidos al cliente.</p>
+                    <table class="budget-table">
+                        <tr>
+                            <th>Ítem</th>
+                            <th>Monto</th>
+                        </tr>
+                        <tr>
+                            <td>Dominio .cl (ej. digitaliza.lab - 1 año)</td>
+                            <td>$20.000</td>
+                        </tr>
+                        <tr>
+                            <td>Hosting multidominio (Anual)</td>
+                            <td>$230.000</td>
+                        </tr>
+                        <tr>
+                            <td>Envato Elements (Banco recursos)</td>
+                            <td>$250.000</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td>Total Capital de Trabajo</td>
+                            <td>$500.000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-top: 20px; text-align: center; border-color: var(--primary); background: rgba(0, 240, 255, 0.05);">
+                <h3 style="color: var(--primary); font-size: 2em; margin: 0;">TOTAL DEL PROYECTO: $3.500.000</h3>
             </div>
         </section>
 
@@ -272,7 +404,7 @@
     </div>
 
     <footer>
-        Digitaliza Lab &copy; 2026 - Resumen Ejecutivo
+        Digitaliza Lab &copy; 2026 - Resumen Ejecutivo Detallado
     </footer>
 
 </body>
